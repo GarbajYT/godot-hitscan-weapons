@@ -16,7 +16,6 @@ var fall = Vector3()
 onready var head = $Head
 onready var aimcast = $Head/Camera/AimCast
 onready var muzzle = $Head/Gun/Muzzle
-onready var smoke = preload("res://scenes/Smoke.tscn")
 
 func _ready():
 	
