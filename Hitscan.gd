@@ -35,7 +35,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("fire"):
 		if aimcast.is_colliding():
 			var bullet = get_world().direct_space_state
-			var collision = bullet.intersect_ray(muzzle.transform.origin, aimcast.get_collision_point())
+			var collision = bullet.intersect_ray(muzzle.global_transform.origin, aimcast.get_collision_point())
 			
 			if collision:
 				var target = collision.collider
